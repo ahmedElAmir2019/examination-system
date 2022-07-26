@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.instructor_form">
+   <left>
+      <AnchorPane prefHeight="600.0" prefWidth="187.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutY="63.0" prefHeight="536.0" prefWidth="230.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <ImageView fitHeight="86.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@exam.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="77.0" fitWidth="74.0" layoutX="3.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@course.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="89.0" fitWidth="70.0" layoutX="4.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@report.jpg" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="75.0" fitWidth="85.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@bell.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="75.0" fitWidth="85.0" layoutX="2.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@mail.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="75.0" fitWidth="85.0" layoutX="2.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@settings.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="75.0" fitWidth="85.0" layoutX="2.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@log%20out.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="75.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@application.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="600.0" prefWidth="747.0" style="-fx-background-color: #33B7FF;" BorderPane.alignment="CENTER">
+         <children>
+            <PieChart fx:id="pie_chart" layoutX="154.0" layoutY="145.0" prefHeight="375.0" prefWidth="404.0" title="Course Distribuation" />
+            <ImageView fitHeight="79.0" fitWidth="138.0" layoutX="531.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@User.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="434.0" layoutY="41.0" prefHeight="0.0" prefWidth="54.0" text="Label">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

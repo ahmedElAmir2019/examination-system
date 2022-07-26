@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.Registration">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="294.0" style="-fx-background-color: #33B7FF;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="62.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@exam.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="41.0" layoutY="282.0" text="Examination System">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="297.0" prefHeight="600.0" prefWidth="605.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="195.0" layoutY="11.0" text="Registration">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Separator layoutX="13.0" layoutY="50.0" prefHeight="0.0" prefWidth="578.0" />
+            <TextField fx:id="First_name" layoutX="16.0" layoutY="71.0" prefHeight="42.0" prefWidth="279.0" promptText="First Name" style="-fx-background-insets: 0; -fx-border-radius: 20; -fx-border-color: #33D2FF; -fx-background-color: #ffffff;" styleClass="text_input" stylesheets="@stylee.css" />
+            <TextField fx:id="Last_name" layoutX="303.0" layoutY="71.0" prefHeight="42.0" prefWidth="279.0" promptText="Last Name" style="-fx-background-insets: 0; -fx-border-radius: 20; -fx-border-color: #33D2FF; -fx-background-color: #ffffff;" styleClass="text_input" stylesheets="@stylee.css" />
+            <TextField fx:id="user" layoutX="14.0" layoutY="126.0" prefHeight="42.0" prefWidth="326.0" promptText="User Name" style="-fx-background-insets: 0; -fx-border-radius: 20; -fx-border-color: #33D2FF; -fx-background-color: #ffffff;" styleClass="text_input" stylesheets="@stylee.css" />
+            <TextField fx:id="Email" layoutX="16.0" layoutY="182.0" prefHeight="42.0" prefWidth="453.0" promptText="Email" style="-fx-background-insets: 0; -fx-border-radius: 20; -fx-border-color: #33D2FF; -fx-background-color: #ffffff;" styleClass="text_input" stylesheets="@stylee.css" />
+            <PasswordField fx:id="Password" layoutX="14.0" layoutY="235.0" prefHeight="42.0" prefWidth="326.0" promptText="Password" style="-fx-border-radius: 20; -fx-background-insets: 0; -fx-border-color: #33D2FF; -fx-background-color: #ffffff;" styleClass="text_input" stylesheets="@stylee.css" />
+            <PasswordField fx:id="Repassword" layoutX="14.0" layoutY="288.0" prefHeight="42.0" prefWidth="326.0" promptText="Repassword" style="-fx-border-radius: 20; -fx-background-insets: 0; -fx-border-color: #33D2FF; -fx-background-color: #ffffff;" styleClass="text_input" stylesheets="@stylee.css" />
+            <TextField fx:id="Year_of_birth" layoutX="13.0" layoutY="341.0" prefHeight="42.0" prefWidth="164.0" promptText="Year of birth" style="-fx-background-insets: 0; -fx-border-radius: 20; -fx-border-color: #33D2FF; -fx-background-color: #ffffff;" styleClass="text_input" stylesheets="@stylee.css" />
+            <TextField fx:id="Month" layoutX="211.0" layoutY="341.0" prefHeight="42.0" prefWidth="94.0" promptText="Month" style="-fx-background-insets: 0; -fx-border-radius: 20; -fx-border-color: #33D2FF; -fx-background-color: #ffffff;" styleClass="text_input" stylesheets="@stylee.css" />
+            <TextField fx:id="Day" layoutX="348.0" layoutY="341.0" prefHeight="42.0" prefWidth="94.0" promptText="Day" style="-fx-background-insets: 0; -fx-border-radius: 20; -fx-border-color: #33D2FF; -fx-background-color: #ffffff;" styleClass="text_input" stylesheets="@stylee.css" />
+            <TextField fx:id="Phone_number" layoutX="14.0" layoutY="393.0" prefHeight="42.0" prefWidth="326.0" promptText="phone number" style="-fx-background-insets: 0; -fx-border-radius: 20; -fx-border-color: #33D2FF; -fx-background-color: #ffffff;" styleClass="text_input" stylesheets="@stylee.css" />
+            <RadioButton layoutX="195.0" layoutY="447.0" mnemonicParsing="false" styleClass="radio-color" stylesheets="@stylee.css" text="Male" />
+            <RadioButton layoutX="365.0" layoutY="447.0" mnemonicParsing="false" styleClass="radio-color" stylesheets="@stylee.css" text="Female" />
+            <RadioButton layoutX="365.0" layoutY="482.0" mnemonicParsing="false" styleClass="radio-color" stylesheets="@stylee.css" text="Instructor" />
+            <RadioButton layoutX="195.0" layoutY="482.0" mnemonicParsing="false" styleClass="radio-color" stylesheets="@stylee.css" text="Student" />
+            <Separator layoutX="13.0" layoutY="529.0" prefHeight="0.0" prefWidth="578.0" />
+            <Button layoutX="234.0" layoutY="544.0" mnemonicParsing="false" onAction="#login" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #33D2FF;" text="Confirm" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
